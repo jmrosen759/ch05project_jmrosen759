@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/form-validation.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Contact</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Form</h2>
+
+    <form id="contact-form" action="#" method="post">
+      <div class="field">
+        <label for="name">Full Name</label>
+        <input class="required" type="text" id="name" name="name" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input class="required" type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="topic">Reason</label>
+        <select class="required" id="topic" name="topic" required>
+          <option value="">-- pick one --</option>
+          <option value="question">Question</option>
+          <option value="support">Support</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- has to be input type button -->
+      <input type="button" id="submit-btn" value="Submit">
+    </form>
+
+    <span id="missing-count"></span>
+
+    <!-- #19 paragraph tags explaining each function -->
+    <section class="notes">
+      <p>checkMissing() looks at the required fields and counts how many are still blank</p>
+      <p>validateEmail() checks the email length and adds a red border if its not</p>
+      <p>runValidation() runs both checks and blocks the form if something is missing or invalid</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jacob Rosen</p>
+  </footer>
+</body>
+</html>

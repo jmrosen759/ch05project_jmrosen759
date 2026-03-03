@@ -1,0 +1,23 @@
+.required {
+  border: 2px solid gold;
+  padding: 6px;
+}
+
+.invalid-email {
+  border: 2px solid red;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+#missing-count {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.notes {
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
